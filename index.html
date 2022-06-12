@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <title>CALETA FIGHTERS</title>
+</head>
+
+<body>
+  <h1 class="titulo">CALETA FIGHTERS</h1>
+
+  <div id="big-canvas">
+    <div id="small-canvas">
+      <!-- energia jugador -->
+      <div class="relative1">
+        <div id="salud1"></div>
+        <div id="restasalud1"></div>
+      </div>
+      <!-- tiempo -->
+      <div id="tiempo"></div>
+      <!-- enrgia enemigo -->
+      <div class="relative">
+        <div id="salud2"></div>
+        <div id="restasalud2"></div>
+      </div>
+    </div>
+    <div class="finjuego">EMPATE</div>
+    <canvas id="juego"></canvas>
+  </div>
+  <img src="img/logow.png" id="logo">
+  <div class="container">
+    <button class="button" id="iniciar"><span>Iniciar Partida</span></button>
+    <button class="button" id="reiniciar" style="display: none;"><span>Volver a Inicio</span></button>
+    <button class="button" id="instrucciones"><span>Instrucciones</span></button>
+    <button class="button" style="display: none;" id="ocultar"><span>Oculta Instr.</span></button>
+  </div>
+
+  <div id="instr" style="display: none;">
+    <div class="col">
+      <ul>
+        <u>Jugador 1</u>
+        <li>Saltar: W</li>
+        <li>Derecha: D</li>
+        <li>Izquierda: A</li>
+        <li>Atacar: C</li>
+      </ul>
+    </div>
+    <div class="col">
+      <ul>
+        <u>Jugador 2</u>
+        <li>Saltar: &#8593;</li>
+        <li>Derecha: &#8594;</li>
+        <li>Izquierda: &#8592;</li>
+        <li>Atacar: +</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-links">
+      <a href="https://github.com/jcalerofm" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/jorgecalero.fm/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/jcalerofm/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <div class="footer-copyright">
+      Web realizada con <i class="fas fa-heart"></i> por Jorge Calero
+    </div>
+  </div>
+
+  <script src="js/utils.js"></script>
+  <script src="js/classes.js"></script>
+  <script src="js/index.js"></script>
+
+
+</body>
+
+</html>
